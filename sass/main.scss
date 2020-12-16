@@ -1,5 +1,7 @@
 // colors
-$bg-color: #fff;
+$bg-top-color: #eeedef;
+$bg-center-color: #ebe8eb;
+$bg-bottom-color: #bbbabb;
 $ball-light-color: #fff;
 $ball-dark-color: #dbdbdb;
 $shadow-color: #000;
@@ -8,7 +10,12 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background: $bg-color;
+  background: linear-gradient(
+    to bottom,
+    $bg-top-color 0%,
+    $bg-center-color 50%,
+    $bg-bottom-color 80%
+  );
   overflow: hidden;
 
   * {
